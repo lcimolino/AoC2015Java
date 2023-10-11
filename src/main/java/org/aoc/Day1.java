@@ -2,7 +2,15 @@ package org.aoc;
 
 import java.util.List;
 
-public class Day1 {
+public final class Day1 {
+    public Day1()
+    {
+        System.out.println("Day 1 selected. Part 1 solution:");
+        System.out.println(part1());
+        System.out.println("Part 2 solution:");
+        System.out.println(part2() + System.lineSeparator());
+    }
+
     /*
     --- Day 1: Not Quite Lisp ---
 
@@ -34,8 +42,9 @@ public class Day1 {
     To what floor do the instructions take Santa?
 
     */
-    public static int part1FindFloorWithParentheses(List<String> input)
+    public static int part1()
     {
+        List<String> input = Utils.parseInputToString();
         String inputString = input.get(0);
 
         //Floor 0 is the first floor
@@ -74,8 +83,9 @@ public class Day1 {
     What is the position of the character that causes Santa to first enter the basement?
 
      */
-    public static int part2FindFirstBasementCharacter(List<String> input)
+    public static int part2()
     {
+        List<String> input = Utils.parseInputToString();
         int floor = 0;
         int firstBasementPosition = 0;
         String inputString = input.get(0);

@@ -4,7 +4,15 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Day2 {
+public final class Day2 {
+    public Day2()
+    {
+        System.out.println("Day 2 selected. Part 1 solution:");
+        System.out.println(part1());
+        System.out.println("Part 2 solution:");
+        System.out.println(part2() + System.lineSeparator());
+    }
+
     /*
     --- Day 2: I Was Told There Would Be No Math ---
 
@@ -25,8 +33,10 @@ public class Day2 {
     All numbers in the elves' list are in feet. How many total square feet of wrapping paper should they order?
      */
 
-    public static int part1FindTotalSquareFeet(List<String> input)
+    public static int part1()
     {
+        List<String> input = Utils.parseInputToString();
+
         int totalSquareFeet = 0;
 
         for (String inputLine: input)
@@ -90,8 +100,10 @@ public class Day2 {
     How many total feet of ribbon should they order?
      */
 
-    public static int part2FindTotalRibbonNeeded(List<String> input)
+    public static int part2()
     {
+        List<String> input = Utils.parseInputToString();
+
         int totalRibbon = 0;
 
         for (String inputLine: input)
