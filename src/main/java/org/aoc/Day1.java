@@ -46,6 +46,7 @@ public class Day1 {
             {
                 floor++;
             }
+            //We are guaranteed only ( or ) by problem constraint so no further char check
             else
             {
                 floor--;
@@ -62,9 +63,10 @@ public class Day1 {
 
         for (int i = 0; i < input.length(); i++)
         {
+            //By checking floor before changing it, we ensure at least one increment of i occurs, thus correct position
             if (floor == -1)
             {
-                firstBasementPosition = i + 1;
+                firstBasementPosition = i;
                 break;
             }
             else if (input.charAt(i) == '(')
