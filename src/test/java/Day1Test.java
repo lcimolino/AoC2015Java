@@ -10,7 +10,7 @@ public class Day1Test {
     public void part1_empty_input_should_return_0()
     {
         //Act - pass in an empty string, store output
-        int result = Day1.part1FindFloorWithParentheses(List.of());
+        int result = Day1.part1FindFloorWithParentheses(List.of(""));
 
         //Assert - check if 0 is returned
         Assert.assertEquals(0, result);
@@ -50,7 +50,7 @@ public class Day1Test {
     public void part2_empty_input_should_return_0()
     {
         //Act - pass in an empty string, store output
-        int result = Day1.part2FindFirstBasementCharacter(List.of());
+        int result = Day1.part2FindFirstBasementCharacter(List.of(""));
 
         //Assert - check if 0 is returned
         Assert.assertEquals(0, result);

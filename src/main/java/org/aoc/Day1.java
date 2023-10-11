@@ -36,13 +36,7 @@ public class Day1 {
     */
     public static int part1FindFloorWithParentheses(List<String> input)
     {
-        if (input.isEmpty())
-        {
-            return 0;
-        }
-
         String inputString = input.get(0);
-
 
         //Floor 0 is the first floor
         int floor = 0;
@@ -82,11 +76,6 @@ public class Day1 {
      */
     public static int part2FindFirstBasementCharacter(List<String> input)
     {
-        if (input.isEmpty())
-        {
-            return 0;
-        }
-
         int floor = 0;
         int firstBasementPosition = 0;
         String inputString = input.get(0);

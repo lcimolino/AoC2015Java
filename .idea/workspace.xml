@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1a13cdc9-5699-4d8c-81e6-25a3fe26330c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/aoc/Day1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aoc/Day1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/aoc/Day2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aoc/Day2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/aoc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/aoc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Day1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Day1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Day2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Day2Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +64,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in AoC2015Java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AoC2015Java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Day1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC2015Java" />
       <option name="PACKAGE_NAME" value="" />
@@ -70,31 +81,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day1Test.part2_balanced_parentheses_should_return_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day2Test.part1_area_should_calculate_as_expected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC2015Java" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day1Test" />
-      <option name="METHOD_NAME" value="part2_balanced_parentheses_should_return_0" />
+      <option name="MAIN_CLASS_NAME" value="Day2Test" />
+      <option name="METHOD_NAME" value="part1_area_should_calculate_as_expected" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day1Test.part2_negative_input_should_return_correct_value" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day2Test.part1_empty_input_should_return_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AoC2015Java" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day1Test" />
-      <option name="METHOD_NAME" value="part2_negative_input_should_return_correct_value" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day1Test.part2_positive_input_should_return_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AoC2015Java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day1Test" />
-      <option name="METHOD_NAME" value="part2_positive_input_should_return_0" />
+      <option name="MAIN_CLASS_NAME" value="Day2Test" />
+      <option name="METHOD_NAME" value="part1_empty_input_should_return_0" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,9 +105,9 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Day1Test" />
-        <item itemvalue="JUnit.Day1Test.part2_negative_input_should_return_correct_value" />
-        <item itemvalue="JUnit.Day1Test.part2_positive_input_should_return_0" />
-        <item itemvalue="JUnit.Day1Test.part2_balanced_parentheses_should_return_0" />
+        <item itemvalue="JUnit.All in AoC2015Java" />
+        <item itemvalue="JUnit.Day2Test.part1_area_should_calculate_as_expected" />
+        <item itemvalue="JUnit.Day2Test.part1_empty_input_should_return_0" />
       </list>
     </recent_temporary>
   </component>
