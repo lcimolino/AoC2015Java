@@ -1,5 +1,7 @@
 package org.aoc;
 
+import java.util.List;
+
 public class Day1 {
     /*
     --- Day 1: Not Quite Lisp ---
@@ -32,13 +34,20 @@ public class Day1 {
     To what floor do the instructions take Santa?
 
     */
-    public static int part1FindFloorWithParentheses(String input)
+    public static int part1FindFloorWithParentheses(List<String> input)
     {
+        if (input.isEmpty())
+        {
+            return 0;
+        }
+
+        String inputString = input.get(0);
+
 
         //Floor 0 is the first floor
         int floor = 0;
 
-        String output = input.replaceAll("\\(\\)", "");
+        String output = inputString.replaceAll("\\(\\)", "");
 
         for (int i = 0; i < output.length(); i++)
         {
@@ -56,12 +65,33 @@ public class Day1 {
         return floor;
     }
 
-    public static int part2FindFirstBasementCharacter(String input)
+    /*
+    --- Part Two ---
+
+    Now, given the same instructions, find the position of the first character that causes him to enter the
+    basement (floor -1). The first character in the instructions has position 1, the second character has position 2,
+    and so on.
+
+    For example:
+
+        ) causes him to enter the basement at character position 1.
+        ()()) causes him to enter the basement at character position 5.
+
+    What is the position of the character that causes Santa to first enter the basement?
+
+     */
+    public static int part2FindFirstBasementCharacter(List<String> input)
     {
+        if (input.isEmpty())
+        {
+            return 0;
+        }
+
         int floor = 0;
         int firstBasementPosition = 0;
+        String inputString = input.get(0);
 
-        for (int i = 0; i < input.length(); i++)
+        for (int i = 0; i < inputString.length(); i++)
         {
             //By checking floor before changing it, we ensure at least one increment of i occurs, thus correct position
             if (floor == -1)
@@ -69,7 +99,7 @@ public class Day1 {
                 firstBasementPosition = i;
                 break;
             }
-            else if (input.charAt(i) == '(')
+            else if (inputString.charAt(i) == '(')
             {
                 floor++;
             }

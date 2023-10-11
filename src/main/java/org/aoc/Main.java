@@ -2,6 +2,8 @@ package org.aoc;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -12,6 +14,7 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         int choice = -1;
         Scanner input = new Scanner(System.in);
+        File inputFile = new File("input.txt");
 
         System.out.println("Welcome to the Advent of Code 2015 solution helper!" + System.lineSeparator());
         System.out.print("Type the day number to display or press 0 to exit: ");
@@ -20,21 +23,24 @@ public class Main {
         {
             choice = input.nextInt();
 
+            if (choice == 0)
+            {
+                System.out.println("Exiting program.");
+            }
             if (choice == 1)
             {
                 System.out.println("Day 1 selected. Part 1 solution:");
-                System.out.println(Day1.part1FindFloorWithParentheses(parseInputToString()));
+                System.out.println(Day1.part1FindFloorWithParentheses(parseInputToString(inputFile)));
                 System.out.println("Part 2 solution:");
-                System.out.println(Day1.part2FindFirstBasementCharacter(parseInputToString()));
+                System.out.println(Day1.part2FindFirstBasementCharacter(parseInputToString(inputFile)));
             }
         }
     }
 
     //Helper method allows us to parse the input.txt file programmatically instead of manually
-    public static String parseInputToString()
+    public static List<String> parseInputToString(File input)
     {
-        File input = new File("input.txt");
-        StringBuilder output = new StringBuilder();
+        List<String> output = new ArrayList<>();
 
         try
         {
@@ -42,7 +48,7 @@ public class Main {
 
             while(inputReader.hasNextLine())
             {
-                output.append(inputReader.nextLine());
+                output.add(inputReader.nextLine());
             }
 
         } catch (FileNotFoundException e)
@@ -50,6 +56,6 @@ public class Main {
             System.out.println("Error: file not found or inaccessible.");
         }
 
-        return output.toString();
+        return output;
     }
 }
