@@ -27,10 +27,17 @@ public class Main {
             {
                 System.out.println("Exiting program.");
             }
-            if (choice == 1)
+            else if (choice == 1)
             {
                 System.out.println("Day 1 selected. Part 1 solution:");
                 System.out.println(Day1.part1FindFloorWithParentheses(parseInputToString(inputFile)));
+                System.out.println("Part 2 solution:");
+                System.out.println(Day1.part2FindFirstBasementCharacter(parseInputToString(inputFile)));
+            }
+            else if (choice == 2)
+            {
+                System.out.println("Day 2 selected. Part 1 solution:");
+                System.out.println(Day2.part1FindTotalSquareFeet(parseInputToString(inputFile)));
                 System.out.println("Part 2 solution:");
                 System.out.println(Day1.part2FindFirstBasementCharacter(parseInputToString(inputFile)));
             }
